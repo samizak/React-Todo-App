@@ -1,0 +1,42 @@
+body {
+  background-color: white;
+}
+
+.heading {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  min-height: 600px;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  background: none;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 1px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .todo-app {
+    width: 100%;
+  }
+}
+
+.todo-form {
+  display: "flex";
+  margin-bottom: 32px;
+  padding: 16px;
+  text-transform: capitalize;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

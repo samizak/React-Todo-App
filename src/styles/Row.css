@@ -1,0 +1,60 @@
+.todo-row {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  border-radius: 5px;
+  width: 90%;
+  outline: gray solid 1px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0;
+  height: 0;
+}
+
+.todo-row:hover {
+  background-color: #e8e8e8;
+}
+
+div.deleteSlide {
+  opacity: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  transition: all 0.4s ease-out !important;
+}
+
+div.show {
+  opacity: 1;
+  height: 30px;
+  margin-top: 12px;
+  padding: 16px;
+  transition: all 0.4s ease-out;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.completed {
+  text-decoration: line-through !important;
+  opacity: 0.4 !important;
+}
+
+div.strike:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-bottom: 1px solid black;
+  width: 95%;
+  left: 2.5%;
+}
+
+.settings {
+  display: flex;
+}
